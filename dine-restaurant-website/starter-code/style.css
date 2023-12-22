@@ -803,3 +803,14 @@ letter-spacing: 2px;
 text-transform: uppercase;
 
 }
+
+button:hover{
+    background: white;
+    color: #111;
+    border: 1px solid gray;
+}
+
+.erromsg{
+    color: red;
+    display: none;
+}

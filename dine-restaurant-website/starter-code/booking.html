@@ -29,23 +29,26 @@
       <div class="Group12-booking">
         <img src="./images/downloads/Group 12.png" alt="">
       </div>
-    <form method="get">
+    <form onsubmit="return checkForm()" action="#">
       <div class="form-container">
        <div class="form-items">
         <div>
         
-          <input type="text" class="name" placeholder="Name">
+          <input type="text" class="name" placeholder="Name" id="inputField1">
+          <p class="erromsg" id="inputerromessage1">This field is incomplete</p>
         </div>
         <div>
           
-          <input type="email" class="email" placeholder="Email">
+          <input type="email" class="email" placeholder="Email"  id="inputField2">
+          <p class="erromsg" id="inputerromessage2">This field is incomplete</p>
         </div>
 
 
-        <div class="date">
+        <div class="date" id="pickDate">
           <div>
             <p class="Pick">Pick a date</p>
           </div>
+          <p class="erromsg" id="inputerromessage3">This field is incomplete</p>
         <div>
           <select id="month" name="month">
             <option>MM</option>
@@ -88,10 +91,11 @@
           </div>
         </div>
 
-        <div class="time">
+        <div class="time" id="inputField3">
         <div>
           <p class="Pick">Pick a time</p>
         </div>
+        <p class="erromsg" id="inputerromessage4">This field is incomplete</p>
           <div>
             <select id="hour" name="hour">
             </select>
@@ -107,13 +111,13 @@
           <div class="plus">
             
           <input type="button" id ="button-mius" value="-" onclick="decrement() ">
-        <input type="text" id="numberInput" value="0" readonly>
+        <input type="text" id="numberInput" value="0" readonly class="inputField">
         <input type="button" id="button-mius" onclick="increment()"  value="+">
         </div>
           
 
         <div >
-          <button type="button" class="make-reservation">MAKE RESERVATION</button>
+          <button type="submit" value="submit" class="make-reservation" onsubmit="">MAKE RESERVATION</button>
         </div>
        </div>
       </div>
