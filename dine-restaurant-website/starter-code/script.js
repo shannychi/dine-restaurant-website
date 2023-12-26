@@ -59,14 +59,10 @@ function decrement() {
 function checkForm() {
     var Name = document.getElementById("inputField1");
     var email = document.getElementById("inputField2");
-    var date = document.getElementById("pickDate");
-    var time = document.getElementById("inputField3");
     var is_valid = false;
     /* checking if input is empty */
    document.getElementById("inputerromessage1").style.display = "none";
    document.getElementById("inputerromessage2").style.display = "none";
-   document.getElementById("inputerromessage3").style.display = "none";
-   document.getElementById("inputerromessage4").style.display = "none";
    is_valid = true;
 
  if(Name.value == "") {
@@ -78,15 +74,7 @@ function checkForm() {
     document.getElementById("inputerromessage2").style.display = "flex";
     is_valid = false;
  }
- if(date.value == "") {
-    document.getElementById("inputerromessage3").style.display = "flex";
-    is_valid = false;
- }
-
- if(time.value == "") {
-    document.getElementById("inputerromessage4").style.display = "flex";
-    is_valid = false;
- }
+ 
 return is_valid;
 
 }
