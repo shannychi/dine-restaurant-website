@@ -8,11 +8,13 @@
 .body{
    min-height: 100vh;
    max-width: 400px;
-    margin: 0 auto;
+   margin: 0 auto;
 }
 .contanier{
     height: 1440px;
     width: 100%;
+    overflow: clip;
+    overflow-clip-margin: 173em;
 }
 
 .homepage{
@@ -822,21 +824,21 @@ button:hover{
 
 /* media query */
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-.body{
-    width: 80%;
-    height: 600px;
-    margin: 0 auto;
-}
+
     
 
     .contanier{
- width: 760px;
+ width: 768px;
 height: 992px;
 flex-shrink: 0;
+overflow-y: visible;
+overflow-x: hidden;
     }
 
     .homepage{
         flex-direction: column-reverse;
+        position: relative;
+        right: 60px;
 }
 
 .homepage-img, .homepage-img-mobile, .mobile-svg{
@@ -923,7 +925,7 @@ left: 60px;
     position: relative;
     bottom: 390px;
     height: 700px;
-    margin-left: 140px;
+    margin-left: 60px;
 }
 
 .img1, .img2, .family-gathering-img, .enjoyable-place-mobile,
@@ -946,6 +948,11 @@ left: 60px;
     left: 75px;
 }
 
+
+.FAMILY-div button{
+    position: relative;
+    top: 100px;
+}
 
 .move-text1{
     margin-top: 450px;
@@ -997,13 +1004,13 @@ line-height: 30px; /* 150% */
 }
 
 .black-background-container{
-    width: 1000px;
+    width: 100%;
     height: 1030px;
 }
 
 .flex-tablet{
     position: relative;
-    right: 80px;
+    right: 130px;
    bottom: 50px;
 }
 
@@ -1031,16 +1038,16 @@ line-height: 30px; /* 150% */
 }
 
 .Group12-tablet{
-    width: 200px;
+    width: 150px;
    position: relative;
-   right: 490px;
-   bottom: 280px;
+   right: 550px;
+   bottom: 230px;
 }
 
 .line-icon1-tablet{
     position: relative;
-    left: 360px;
-    bottom: 80px;
+    left: 300px;
+    bottom: 60px;
 }
 
 .line-icon-tablet{
@@ -1056,6 +1063,8 @@ line-height: 30px; /* 150% */
 
 .white-background-flex{
 flex-direction: column;
+position: relative;
+right: 20px;
 }
 
 
@@ -1091,11 +1100,13 @@ font-style: normal;
 font-weight: 400;
 line-height: 30px; 
 position: relative;
-right: 60px;
+right: 100px;
 }
 
 .family-div-tablet{
     margin-top: 150px;
+    position: relative;
+    left: 80px;
 
 }
 
@@ -1105,9 +1116,10 @@ right: 60px;
 
 .FAMILY-p-tablet{
     display: flex;
-    gap : 8px;
+    
 
 }
+
 
 .special-event1{
     width: 303px;
@@ -1146,6 +1158,8 @@ letter-spacing: 2.5px;
 
 .inner-footer-text{
     flex-direction: column;
+    position: relative;
+    right: 120px;
 }
 
 .inner-footer-text-h1{
@@ -1295,16 +1309,16 @@ top: 200px;
 
   @media only screen and (max-width: 767px) {
 
-.body{
-    width: 100%;
-    height: 100vh;
-    margin: 0;
+body{
+   
 }
 
 .contanier{
     width: 700px;
     min-height: 100vh;
     flex-shrink: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .homepage{
@@ -1713,7 +1727,7 @@ padding-left: 0px;
 }
 
 .inner-footer-text-h1{
-    width: 500px;
+    width: 550px;
 flex-shrink: 0;
 color: #FFF;
 text-align: center;
@@ -1733,7 +1747,7 @@ height: 64px;
 flex-shrink: 0;
 position: relative;
 bottom: 170px;
-left: 80px;
+left: 95px;
 
 }
 .footer-container{
