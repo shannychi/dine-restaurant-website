@@ -1808,6 +1808,8 @@ button:hover {
     width: 700px;
     min-height: 100vh;
     flex-shrink: 0;
+    position: absolute;
+    overflow-x: hidden;
   }
 
   .hero-booking {
