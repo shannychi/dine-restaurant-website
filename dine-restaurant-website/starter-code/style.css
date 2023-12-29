@@ -1807,7 +1807,7 @@ button:hover {
 
 @media only screen and (max-width: 767px) {
   .contanier-booking {
-    width: 375px;
+    width: 100%;
 height: 1574px;
     flex-shrink: 0;
     overflow-x: hidden;
