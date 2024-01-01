@@ -685,7 +685,7 @@ select {
   width: 30px;
   position: relative;
   top: 50px;
-  left: 30px;
+  left: 10px;
 }
 
 input[value^="4"] {
@@ -696,6 +696,7 @@ input[value^="4"] {
   line-height: 24px;
   letter-spacing: -0.25px;
   width: 30px;
+  padding-right: 60px;
 }
 
 input[value^="+"], input[value^='-']{
